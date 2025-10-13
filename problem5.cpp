@@ -14,6 +14,7 @@ int main() {
 		}
 	}
 
-done:	std::cout << i << "\n";
+done:
+	std::cout << i << "\n";
 	return 0;
 }
