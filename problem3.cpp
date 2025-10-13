@@ -2,10 +2,10 @@
 #include <cmath>
 
 int main() {
-    long int largest_factor = 0;
-    long int target = 600851475143;
-    long int target_sqrt = std::sqrt(target);
-    long int factor = 2;
+    long int largest_factor { 0 };
+    long int target { 600851475143 };
+    long int target_sqrt { std::sqrt(target) };
+    long int factor { 2 };
     
     while (target > 0 && factor < target_sqrt) {
         if (!(target % factor)) {
@@ -17,4 +17,6 @@ int main() {
     }
 
     std::cout << largest_factor << "\n";
+
+    return 0;
 }
